@@ -1,260 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body
-{
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width:98.7vw;
-    height:200vh;
-    background-color:cadetblue;
-
-}
-/* #ana
-{
-    width:98.7vw;
-    height:200vh;
-    background-color:cadetblue;
-   
-} */
-#nav
-{
-    
-    height:20vh;
-    width: 100%;
-    display:flex;
-    justify-content:space-between;
-    background-color:rgb(83, 152, 155);
-    
-    
-    
-}
-#logo
-{
-    height:12vh;
-    width:12vw;
-    background-color:beige;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw;
-    font-size: 2vh;
-    border-radius: 6px;;
-    
-}
-#contact
-{
-    height:12vh;
-    width:12vw;
-    background-color:beige;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius:6px;
-    margin: 2vw;
-    font-size: 2vh;
-}
- #maina
-{
-    height:12vh;
-    width:12vw;
-    background-color:beige;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw;
-    border-radius:6px;
-    font-size: 2vh;
-}
-#HAKKINDA
-{
-    height:12vh;
-    width:12vw;
-    background-color:beige;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw;
-    border-radius:6px;
-    font-size: 2vh;
-}
-#photo
-{
-    height:12vh;
-    width:12vw;
-    background-color:beige;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw;
-    border-radius:6px;
-    font-size: 2vh;
-} 
-#bod
-{
-display:flex;
-flex-wrap: wrap;;
-justify-content:center;
-
-
-}
-#isim
-{
-    width:100%;
-    height:70vh;
-    background-color:beige;
-    border: 3px solid darkgray;
-    border-radius:6px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    opacity:90%;
-    background-size:cover;
-    background-image: url(https://i1.wp.com/www.yazilimbilisim.net/wp-content/uploads/2017/12/yazilimbilisim.png?resize=375%2C195&ssl=1);
-    
-}
-#yazi
-{
-    width:100%;
-    height:40vh;
-    background-color: rgb(0, 0, 0);
-    border:3px solid rgb(248, 246, 246);
-    border-radius:5px;
-    justify-content: center;
-    opacity: 80%;
-
-
-}
-h1{
- font-size: larger;
- font-family: Arial, Helvetica, sans-serif;
- color:rgb(248, 244, 244);
- opacity: 90%;
- text-align: center;
- 
-}
-button:hover
-{
-    width: 5vw;
-    background-color: coral;
-    color: white;
-    border-radius:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-#btn
-input{
-    width:5vw;
-    height:5vh;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    margin-left:48%;
-    opacity:80;
-    background-color: rgb(28, 153, 161);
-    color: white;
-    border-radius:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-
-#tanitim
-{
-    margin-top: 100px;
-    width:100%;
-    height: 400px;
-    background-color: cadetblue;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-#tanitim-child1
-{
-background:url(https://i01.sozcucdn.com/wp-content/uploads/2022/08/12/iecrop/eee_16_9_1660294170.jpg)no-repeat; 
-    background-size:cover;
-    width:600px;
-    height:600px;
-}
-#tanitim-child2
-{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 200px;
-    background-color: cadetblue;
-}
-#footer
-{
-margin-top:500px;
-width:100%;
-height:100px;
-background-color: rgb(31, 116, 128);
-display: flex;
-justify-content: space-between;
-
-}
-#instagram
-{
-    background-color: black;
-    width: 50px;
-    height:50px;
-    border-radius: 20vh;
-    background: url(https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_640.png)no-repeat;
-    background-size: cover;
-}
-p
-{
-    margin-left:-20px;
-}
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../BOOSTRAP/CSS/index.css">
+    <title>Murat's Portfolio</title>
+    <style>
+        body
+{
+background-color:#474747;
+color:white;
+}
+.navbar
+{
+background-color:#c0c0c0;
+text-align: center;
+justify-content:center ;
+}
+.btn
+{
+color:white;
+border-color:#28a745;
+}
+.btn:hover
+{
+color: #28a745;
+}
+.text
+{
+margin-top:20vh;
+margin-left:3vw;
+}
+.card-body
+{
+background-color:#808080;
+
+}
+.mh
+{
+margin-left:25vh;
+display: flex;
+
+}
+#image
+{
+max-height:60vh;
+padding-left:20vh;
+border-radius:4px;
+}
+#butn
+{
+margin-left: 34vw;
+}
+#social-media
+{
+    background-color:#313552;
+}
+.media_link
+{
+    padding: 1rem;
+    max-width:15rem;
+    margin-left: 1rem;
+    border: 2px solid #ffc107;
+    border-radius: 0.5rem;
+}
+body
+{
+background-color:#474747;
+color:white;
+}
+.navbar
+{
+background-color:#c0c0c0;
+text-align: center;
+justify-content:center ;
+}
+.btn
+{
+color:white;
+border-color:#28a745;
+}
+.btn:hover
+{
+color: #28a745;
+}
+.text
+{
+margin-top:20vh;
+margin-left:3vw;
+}
+.card-body
+{
+background-color:#808080;
+
+}
+.mh
+{
+margin-left:25vh;
+display: flex;
+
+}
+#image
+{
+max-height:60vh;
+padding-left:20vh;
+border-radius:4px;
+}
+#butn
+{
+margin-left: 34vw;
+}
+#social-media
+{
+    background-color:#313552;
+}
+.media_link
+{
+    padding: 1rem;
+    max-width:15rem;
+    margin-left: 1rem;
+    border: 2px solid #ffc107;
+    border-radius: 0.5rem;
+}
+
+    </style>
 </head>
 <body>
-    <div id="ana">
-        <div id="nav">
-            <div id="logo"> MURAT Portfolyo</div>
-            <div id="maina">Anasafa</div>
-            <div id="HAKKINDA">Hakkında</div>
-            <div id="photo">Fotoğraf</div>
-            <div id="contact">İletişim</div>
+                <!-- navbar -->
+    <div class="navbar sticky-top">
+        <div class="container">
+         <div class="col-md-6 m-2">
+            <a class="navbar-brand text-light display-1" href="index.html"></a>
+             <h2 class="justify-content-start"><span class="text-success">M</span>urat <span class="text-success">P</span>ortfolio</h2>
+            </div>
+            <div class="col-md-5 m-4">
+               <a href="#about"><button class="btn btn-outline ">About</button></a>
+               <a href="#project"><button class="btn btn-outline ">Project</button></a>
+               <a href="#media"><button class="btn btn-outline ">Media</button></a>
+               <a href="#resume"><button class="btn btn-outline ">Resume</button></a>
+            </div>
         </div>
-        <div id="bod">
-            <div id="isim"> 
-                <div id="yazi">
-                <h1>Murat Balçın</h1>
-                <br>
-                <br>
-                <h1>Front-End Developer</h1>
-                <br>
-                <br>
-                 <div id="btn"><input type="button" value="Hire me"></div>
-                
-         </div>  
-         
-        
-
-                 </div>
-                 
-        
-        
-     </div>
-     <div id="tanitim">
-        <div id="tanitim-child1"></div>
-        <div id="tanitim-child2"><p>CORNELİUS VE EDİN VİSCA</p></div>
-        <br>
-   </div>
-       
-        <div id="footer">
-            <div id="instagram"><p>instagram</p> </div>
-            
-        </div>
-        
     </div>
+                            <!-- MAİN-VİEW -->
+<div class="container main-container d-flex">
+<div class="row">
+    <div class="col-md-5 m-5">
+        <img src="https://www.vectorkhazana.com/assets/images/products/Handsome_Man_Face_Bearded_Joyful_Male_Success_Confident_Adult_Portrait.png">
+    </div>
+       <div class="col-md-5 pl-5">
+        <h3 class="text justify-content-center">Hi I'm</h3>
+        <h1 class="text text-success justify-content-center">Murat Balcin</h1>
+        <h3 class="text justify-content-center">Front-end Devoloper</h3>
+    </div>
+</div>
+</div>
+                <!-- ABOUT AND CARD AND İMAGE -->
+<div class="mh" class="col-md-5 ml-5 d-flex">
+    <div class="row">
+<div  class="card text-dark" style="width: 18rem;">
+    <div class="card-body">
+     <a href="#"><h5 class="card-title text-center text-white">About</h5></a>
+      <h6 class="card-subtitle mb-2 text-white">About us</h6>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ad dicta doloremque architecto asperiores quas quaerat aut tempore! Doloremque similique reiciendis dolorum fuga enim, numquam quasi. Sunt, distinctio nemo?</p>
+      <a  href="#" class="card-link text-white">About</a>
+      <a href="#" class="card-link text-white">Abot us</a>
+    </div>
+</div>
+  </div>
+  <div class="col-md-5 pl-5 ">
+    <img id="image" src="https://www.kodsihirbazi.com/wp-content/uploads/2018/01/open-position-frontend-developer-dribbble-2-preview-min.png">
+  </div>
+</div>
+</div>
+</div>
+                        <!-- Project head button -->
+    <div class="container mt-5 pl-5 pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <a id="butn" href="#project"><button class="btn btn-outline ">Project</button></a>
+
+            </div>
+        </div>
+    </div>
+                    <!-- project and cards -->
+    <div class="container mt-5  pl-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card " style="width: 18rem;">
+                    <img src="https://www.wordpressintegration.com/common/images/svg-icons/set2/icon24.svg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <p class="card-text">E-Commers Web Site.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 pb-5">
+            <div class="card " style="width: 18rem;">
+                <img src="https://img.freepik.com/premium-vector/headphones-vector-illustration_486879-5.jpg?w=2000" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <p class="card-text">Music Player App.</p>
+                </div>
+            </div>
+              </div>
+        <div class="col-md-4 pb-5">
+        <div class="card " style="width: 18rem;">
+            <img src="https://i.etsystatic.com/19196813/r/il/ab1f73/2583139123/il_fullxfull.2583139123_svt1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">Fitness Web Site.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-5">
+          <div class="card " style="width: 18rem;">
+              <img src="http://oladino.com/wp-content/uploads/2022/08/MR-oladinocom-svg240822b015-2582022102351-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-text">Photography Web Site.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card " style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Feather-communication-message-circle.svg/1200px-Feather-communication-message-circle.svg.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <p class="card-text">Messaging App.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card " style="width: 18rem;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Controller.svg/1200px-Controller.svg.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <p class="card-text">Game App.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+                            <!-- Media head button -->
+    
+                            <!-- media buttons -->
+                            <div id="social-media" class="container-fluid"></div>
+                            <div class="container text-white p-4">
+                              <h4 class="text-warning">Social Media</h4>
+                              <h1 class="m-heading">Let's be Friends</h1>
+                              <div class="row pt-5">
+                                  <div class="col-md-3 media_link btn"href="#">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-linkedin bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn"href="#">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">Github</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-github bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn"href="#">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-white">Reddit</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-reddit bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 media_link btn-warning btn"href="#">
+                                      <div class="row">
+                                          <div class="col-md-6 d-flex justify-content-start">
+                                              <h3 class="pt-2 m-0 text-dark">Email</h3>
+                      
+                                          </div>
+                                          <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                              <i class="bi bi-envelope bi-4x text-secondary"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a id="button"></a>
+<footer>
+    <div id="ftr" class="container text-muted text-center py-3 bt-5">
+        <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5>
+    </div>
+</footer>
+      
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
