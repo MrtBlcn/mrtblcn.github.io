@@ -125,7 +125,81 @@ margin-left: 34vw;
     border: 2px solid #ffc107;
     border-radius: 0.5rem;
 }
-
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+.skills .item-text .w-85{
+    margin-left: 80%;
+}
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--nero);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--green);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
     </style>
 </head>
 <body>
@@ -137,6 +211,7 @@ margin-left: 34vw;
              <h2 class="justify-content-start"><span class="text-success">M</span>urat <span class="text-success">P</span>ortfolio</h2>
             </div>
             <div class="col-md-5 m-4">
+              <a href="#skills"><button class="btn btn-outline ">Skills</button></a>
                <a href="#about"><button class="btn btn-outline ">About</button></a>
                <a href="#project"><button class="btn btn-outline ">Project</button></a>
                <a href="#media"><button class="btn btn-outline ">Media</button></a>
@@ -164,7 +239,7 @@ margin-left: 34vw;
     <div class="card-body">
      <a href="#"><h5 class="card-title text-center text-white">About</h5></a>
       <h6 class="card-subtitle mb-2 text-white">About us</h6>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ad dicta doloremque architecto asperiores quas quaerat aut tempore! Doloremque similique reiciendis dolorum fuga enim, numquam quasi. Sunt, distinctio nemo?</p>
+      <p class="card-text">Murat Balçın.25 yaşındayım.Neos Yazılım Akademi de Frontend Developer olarak görev almaktayım.Proje olarak Candy Shop e-ticaret sitesi,Fotoğrafçılık sitesi ve casttle wars oyun sitesi yaptım.</p>
       <a  href="#" class="card-link text-white">About</a>
       <a href="#" class="card-link text-white">Abot us</a>
     </div>
@@ -176,6 +251,62 @@ margin-left: 34vw;
 </div>
 </div>
 </div>
+<!-- skills page -->
+<section class = "skills container">
+    <div class = "title">
+      <h2>Skills</h2>
+      <div>
+        <h2>My Skills</h2>
+      </div>
+    </div>
+
+    <p class = "text">HTML,CSS3(Librery of BOOSTRAP),javaScript</p>
+
+    <div class = "row ">
+      <div class="col-md-3">
+      <div class = "item">
+        <div class = "item-text">
+          <span>HTML5</span>
+          <span class = "w-90">100%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-100"></div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <div class = "item-text">
+          <span>CSS3</span>
+          <span class = "w-90">90%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-90"></div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <div class = "item-text">
+          <span>Boostrap</span>
+          <span class = "w-90">90%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-90"></div>
+        </div>
+      </div>
+        
+      <div class = "item">
+        <div class = "item-text">
+          <span>javaScript</span>
+          <span class = "w-75">75%</span>
+        </div>
+        <div class = "progress">
+          <div class = "progress-bar w-75"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of skills page -->
                         <!-- Project head button -->
     <div class="container mt-5 pl-5 pt-5 pb-5">
         <div class="row">
@@ -246,7 +377,7 @@ margin-left: 34vw;
                               <h4 class="text-warning">Social Media</h4>
                               <h1 class="m-heading">Let's be Friends</h1>
                               <div class="row pt-5">
-                                  <div class="col-md-3 media_link btn"href="#">
+                                  <div class="col-md-3 media_link btn"href="#https://www.linkedin.com/in/murat-bal%C3%A7%C4%B1n-0a6b421bb/">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
@@ -257,7 +388,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn"href="#">
+                                  <div class="col-md-3 media_link btn"href="#https://github.com/MrtBlcn/MrtBlcn">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">Github</h3>
@@ -268,7 +399,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn"href="#">
+                                  <div class="col-md-3 media_link btn"href="#https://www.reddit.com/?gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6GMdIolZKSVx8xMFr-Hk12z0yx6RaYYRziOK6CrQ7rVUmBj2BsK4pxoC1ZoQAvD_BwE">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">Reddit</h3>
@@ -279,7 +410,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn-warning btn"href="#">
+                                  <div class="col-md-3 media_link btn-warning btn"href="#https://mail.google.com/mail/u/0/?tab=rm#inbox">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-dark">Email</h3>
@@ -296,7 +427,7 @@ margin-left: 34vw;
                       <a id="button"></a>
 <footer>
     <div id="ftr" class="container text-muted text-center py-3 bt-5">
-        <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5>
+       <marquee behavior="" direction="left"> <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5></marquee>
     </div>
 </footer>
       
