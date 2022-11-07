@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo Hesaplama</title>
+</head>
+<body style="background-color:orange; text-align: center; justify-content: center;">
+    <br>
+    <br>
+    <h2>Ana Para:</h2>
+    <br>
+    <input type="text" placeholder="Ana Parayı giriniz" id="many">
+    <br>
+    <h2>Yıllık Faiz Oranı</h2>
+    <input type="text" placeholder="Yıllık Faiz Oranı" id="yfo">
+    <br>
+    <h2>Gün Sayısı</h2>
+    <br>
+    <input type="text" placeholder="Gün Sayısını Giriniz örn:30;" id="gs">
+    <br>
+    <br>
+    <button onclick="hesapla()">Hesapla</button>
+    <br>
+    <p id="write"></p>
+    <p id="write1"></p>
+    <p id="write2"></p>
+    <p id="write3"></p>
+
+<script>
+    function hesapla(){
+       //tanımlamalar
+        var anaPara=Number(document.getElementById("many").value)
+        var yılFaiz=Number(document.getElementById("yfo").value)
+        var gunSay=Number(document.getElementById("gs").value)
+        //işlemler
+        var brüt=anaPara*yılFaiz*gunSay/36500;
+        var stopaj=(brüt*15)/100;
+        var netGtr=(anaPara/100)*(yılFaiz/365)*gunSay-stopaj;
+        var vaSoTop=anaPara+netGtr;
+
+            //Ekrana Yazdırmalar
+        document.getElementById("write").innerHTML="Brüt:"+"<br>"+Math.ceil(brüt)+"₺";
+        document.getElementById("write1").innerHTML="Stopaj Kesintisi :"+"<br>"+Math.ceil(stopaj)+"₺" ;
+        document.getElementById("write2").innerHTML="Net Getiri :"+"<br>"+Math.ceil(netGtr)+"₺" ;
+        document.getElementById("write3").innerHTML="Vade Sonu Toplam Fiyat :"+"<br>"+Math.ceil(vaSoTop)+"₺" ;
+                      }
+  
+</script>
+</body>
+</html>
