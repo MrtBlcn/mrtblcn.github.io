@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing or Heads</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(11, 1, 46);
+            color: aquamarine;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Writing or Heads</h1>
+    <br>
+    <div id="photo"></div>
+    <input type="text" placeholder="writing or heads" id="wh">
+    <button onclick="funk()">throw</button>
+    <p id="know"></p>
+    <p id="score"></p>
+<script>
+    var x = ["w","h"]
+    userScore = 0
+    pcScore = 0
+    function funk(){
+    var randomnumber = Math.floor(Math.random() * 2);
+    var conclusion = x[randomnumber]
+    var inp = document.getElementById("wh").value
+    console.log(randomnumber)
+    console.log(inp)
+
+    if(randomnumber == 0){
+        document.getElementById("photo").innerHTML = '<h2>conclusion</h2><br><img src="img/yazi.png">'
+    }
+    else{
+        document.getElementById("photo").innerHTML = '<h2>conclusion</h2><br><img src="img/tura.png">'
+    }
+
+
+    if (inp==conclusion){
+
+        userScore++
+        document.getElementById("know").innerHTML = "YOU KNOW" 
+        document.getElementById("score").innerHTML = "Computer: " + pcScore + " - User: " + userScore
+    }
+    else{
+        pcScore++
+        document.getElementById("know").innerHTML = "YOU COULDN'T KNOW" 
+        document.getElementById("score").innerHTML = "Computer: " + pcScore + " - User: " + userScore
+    }
+    }
+
+
+</script>
+</body>
+</html>
+</body>
+</html>
