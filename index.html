@@ -45,12 +45,14 @@ margin-left:25vh;
 display: flex;
 
 }
-#image
+/* #image
 {
 max-height:90vh;
 padding-left:20vh;
 border-radius:4px;
-}
+display: flex;
+} */
+
 #butn
 {
 margin-left: 34vw;
@@ -99,8 +101,7 @@ background-color:#808080;
 }
 .mh
 {
-margin-left:25vh;
-display: flex;
+margin-left: 10vh;
 
 }
 #image
@@ -108,8 +109,20 @@ display: flex;
 
 max-width:60vw;
 max-height:60vh;
-padding-left:20vh;
 border-radius:4px;
+}
+@media (max-width: 576px){
+#image{
+  width: 30vw;
+  height: 30vh;
+  border-radius: 2px;
+  visibility: hidden;
+
+}
+#zng{
+  width:60vw;
+  height:60vh;
+}
 }
 #butn
 {
@@ -207,7 +220,7 @@ margin-left: 34vw;
 <body>
                 <!-- navbar -->
     <div class="navbar sticky-top">
-        <div class="container">
+        <div class="container-fluid">
          <div class="col-md-6 m-2">
             <a class="navbar-brand text-light display-1" href="index.html"></a>
              <h2 class="justify-content-start"><span class="text-success">M</span>urat <span class="text-success">P</span>ortfolio</h2>
@@ -222,10 +235,10 @@ margin-left: 34vw;
         </div>
     </div>
                             <!-- MAİN-VİEW -->
-<div class="container main-container d-flex">
-<div class="row">
-    <div class="col-md-5 m-3">
-        <img src="https://www.vectorkhazana.com/assets/images/products/Handsome_Man_Face_Bearded_Joyful_Male_Success_Confident_Adult_Portrait.png">
+<div class="container main-container ">
+<div class="row ">
+    <div class="col-md-5  d-flex">
+        <img id="zng" src="https://www.vectorkhazana.com/assets/images/products/Handsome_Man_Face_Bearded_Joyful_Male_Success_Confident_Adult_Portrait.png">
     </div>
        <div class="col-md-5 pl-5">
         <h3 class="text justify-content-center">Hi I'm</h3>
@@ -235,10 +248,10 @@ margin-left: 34vw;
 </div>
 </div>
                 <!-- ABOUT AND CARD AND İMAGE -->
-<div class="container-fluid">
-  <div class="row">
-<div class="mh" class="col-md-5 ml-5 d-flex ">
-    <div class="row">
+<div class="container-fluid mt-5 ">
+  <div class="row ">
+<div class="mh" class="col-md-5 ml-2  d-flex">
+    <div class="row ">
 <div  class="card text-dark" style="width: 18rem;">
     <div class="card-body">
      <a href="#"><h5 class="card-title text-center text-white">About</h5></a>
@@ -249,9 +262,11 @@ margin-left: 34vw;
     </div>
 </div>
   </div>
-  <div class="col-md-5 pl-5 ">
+  
+  <div class="col-md-5 pl-5 d-flex ">
     <img class="img-fluid" id="image" src="https://www.kodsihirbazi.com/wp-content/uploads/2018/01/open-position-frontend-developer-dribbble-2-preview-min.png">
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -383,7 +398,7 @@ margin-left: 34vw;
                               <h4 class="text-warning">Social Media</h4>
                               <h1 class="m-heading">Let's be Friends</h1>
                               <div class="row pt-5">
-                                  <div class="col-md-3 media_link btn"href="#https://www.linkedin.com/in/murat-bal%C3%A7%C4%B1n-0a6b421bb/">
+                                  <div class="col-md-3 media_link btn"href="https://www.linkedin.com/in/murat-bal%C3%A7%C4%B1n-0a6b421bb/">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
@@ -394,7 +409,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn"href="#https://github.com/MrtBlcn/MrtBlcn">
+                                  <div class="col-md-3 media_link btn"href="https://github.com/MrtBlcn/MrtBlcn">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">Github</h3>
@@ -405,7 +420,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn"href="#https://www.reddit.com/?gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6GMdIolZKSVx8xMFr-Hk12z0yx6RaYYRziOK6CrQ7rVUmBj2BsK4pxoC1ZoQAvD_BwE">
+                                  <div class="col-md-3 media_link btn"href="https://www.reddit.com/?gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6GMdIolZKSVx8xMFr-Hk12z0yx6RaYYRziOK6CrQ7rVUmBj2BsK4pxoC1ZoQAvD_BwE">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-white">Reddit</h3>
@@ -416,7 +431,7 @@ margin-left: 34vw;
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-md-3 media_link btn-warning btn"href="#https://mail.google.com/mail/u/0/?tab=rm#inbox">
+                                  <div class="col-md-3 media_link btn-warning btn"href="https://mail.google.com/mail/u/0/?tab=rm#inbox">
                                       <div class="row">
                                           <div class="col-md-6 d-flex justify-content-start">
                                               <h3 class="pt-2 m-0 text-dark">Email</h3>
@@ -433,7 +448,7 @@ margin-left: 34vw;
                       <a id="button"></a>
 <footer>
     <div id="ftr" class="container text-muted text-center py-3 bt-5">
-       <marquee behavior="" direction="left"> <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5></marquee>
+       <marquee behavior="" direction="right"> <h5>Copyright &copy;2022 <a href="#">MURAT BALÇIN</a></h5></marquee>
     </div>
 </footer>
       
